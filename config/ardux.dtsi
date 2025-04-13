@@ -210,8 +210,9 @@
 #define LAYER_ID_NAVIGATION 4
 #define LAYER_ID_BT_SEL 5
 #define LAYER_ID_CUSTOM 6
-#define LAYER_ID_BIG_SYM 7
-#define LAYER_ID_BIG_FUNCTION 8
+#define LAYER_ID_COPY 7
+#define LAYER_ID_BIG_SYM 8
+#define LAYER_ID_BIG_FUNCTION 9
 
 /*****************************************
  * Standard ARDUX combo definitions
@@ -472,7 +473,7 @@
 				LEADING_NONES
 				&layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S        &kp ARDUX_BASE_T     &kp ARDUX_BASE_R     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A
 				MIDDLE_NONES
-				&layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O          &kp ARDUX_BASE_I     &kp ARDUX_BASE_Y     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E
+				&layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O          &layer_copy_kp LAYER_ID_COPY ARDUX_BASE_I     &kp ARDUX_BASE_Y     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E
 				TRAILING_NONES
 				#if defined CUSTOM_THUMB
 				CUSTOM_THUMB
@@ -527,6 +528,16 @@
 				ARDUX_BT_TOP    &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
 				MIDDLE_NONES
 				ARDUX_BT_BOTTOM &bt BT_SEL 5 &bt BT_SEL 4 &bt BT_SEL 3
+				TRAILING_NONES
+			>;
+		};
+		copy {
+			display-name = "Copy";
+			bindings = <
+				LEADING_NONES
+				&kp LC(C)    &kp LC(V)    &none                &none
+				MIDDLE_NONES
+				&kp LC(X)    &kp LC(Z)    &mo LAYER_ID_COPY    &kp LC(Y)
 				TRAILING_NONES
 			>;
 		};
