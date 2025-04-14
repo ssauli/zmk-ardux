@@ -209,10 +209,9 @@
 #define LAYER_ID_PARENTHETICALS 3
 #define LAYER_ID_NAVIGATION 4
 #define LAYER_ID_BT_SEL 5
-#define LAYER_ID_CUSTOM 6
-#define LAYER_ID_COPY 7
-#define LAYER_ID_BIG_SYM 8
-#define LAYER_ID_BIG_FUNCTION 9
+#define LAYER_ID_COPY 6
+#define LAYER_ID_BIG_SYM 7
+#define LAYER_ID_BIG_FUNCTION 8
 
 /*****************************************
  * Standard ARDUX combo definitions
