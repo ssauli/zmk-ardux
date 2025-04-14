@@ -476,7 +476,7 @@
 				LEADING_NONES
 				&layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S        &kp ARDUX_BASE_T     &kp ARDUX_BASE_R     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A
 				MIDDLE_NONES
-				&layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O          &layer_copy_kp LAYER_ID_COPY ARDUX_BASE_I     &kp ARDUX_BASE_Y     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E
+				&kp ARDUX_BASE_O          &layer_copy_kp LAYER_ID_COPY ARDUX_BASE_I     &kp ARDUX_BASE_Y     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E
 				TRAILING_NONES
 				#if defined CUSTOM_THUMB
 				CUSTOM_THUMB
@@ -538,9 +538,9 @@
 			display-name = "Copy";
 			bindings = <
 				LEADING_NONES
-				&kp LC(C)    &kp LC(V)    &none                &none
+				&none		&none	     	     &kp LC(V)	&kp LC(C)
 				MIDDLE_NONES
-				&kp LC(X)    &kp LC(Z)    &mo LAYER_ID_COPY    &kp LC(Y)
+				&kp LC(Y)	&mo LAYER_ID_COPY    &kp LC(Z)	&kp LC(X)
 				TRAILING_NONES
 			>;
 		};
